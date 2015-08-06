@@ -1,0 +1,12 @@
+<template name="manufacturersPage">
+  <div class="container">
+    <div id="manuf-carousel">
+      {{#each manufacturers}}
+      <div class="item">
+        <a href="#"><img src="img/{{thumb}}"/></a>
+        <div class="text-center">{{name}}</div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</template>

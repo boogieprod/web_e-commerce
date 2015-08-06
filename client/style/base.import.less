@@ -1,0 +1,83 @@
+html, body
+{
+  height:100%;
+}
+
+.layout {
+  min-height: 80%;
+}
+
+button.navbar-toggle {
+  background: inherit;
+}
+
+.navbar {
+   margin-left: 0;
+ }
+
+#iron-router-progress {
+    background-color : darken(@brand-primary,20%);
+    box-shadow       : 0 0 5px darken(@brand-primary,20%);
+}
+
+#iron-router-progress.spinner:before {
+    border-color : darken(@brand-primary,20%);
+}
+
+#nav, #nav ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  list-style: none;
+}
+
+#nav a {
+  display: block;
+  width: 10em;
+}
+
+#nav li {
+  float: left;
+  width: 10em;
+}
+
+#nav li ul {
+  position: absolute;
+  width: 10em;
+  left: -999em;
+  z-index: 1000;
+}
+
+#nav li:hover ul {
+  left: auto;
+}
+
+div#main {
+  padding-top: inherit;
+  clear: left;
+  position: relative;
+  z-index: 0;
+}
+
+#home-carousel .item {
+  margin: 3px;
+}
+
+#home-carousel .item img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.thumbnail {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  position: relative;
+  height: auto;
+  width: auto;
+}
