@@ -11,35 +11,37 @@
       </li>
       <li><a href="{{pathFor 'computerProducts'}}">Computer</a>
         <ul>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
+          {{#each computersubcats}}
+          <li><a href="#">{{name}}</a></li>
+          {{/each}}
         </ul>
       </li>
       <li><a href="{{pathFor 'mobileProducts'}}">Mobile</a>
         <ul>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
-          <li><a href="#">EX</a></li>
+          {{#each mobilesubcats}}
+          <li><a href="#">{{name}}</a></li>
+          {{/each}}
         </ul>
       </li>
       <li><a href="{{pathFor 'homeProducts'}}">Home</a>
         <ul>
-          <li><a href="#">EX</a></li>
+          {{#each homesubcats}}
+          <li><a href="#">{{name}}</a></li>
+          {{/each}}
         </ul>
       </li>
       <li><a href="{{pathFor 'carProducts'}}">Car</a>
         <ul>
-          <li><a href="#">EX</a></li>
+          {{#each carsubcats}}
+          <li><a href="#">{{name}}</a></li>
+          {{/each}}
         </ul>
       </li>
       <li><a href="{{pathFor 'gadgetProducts'}}">Gadgets</a>
         <ul>
-          <li><a href="#">EX</a></li>
+          {{#each gadsubcats}}
+          <li><a href="#">{{name}}</a></li>
+          {{/each}}
         </ul>
       </li>
       <li><a href="{{pathFor 'manufacturersPage'}}">Manufacturers</a>

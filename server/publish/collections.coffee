@@ -9,3 +9,6 @@ Meteor.publish 'attachments', ->
 
 Meteor.publish 'manufacturers', ->
 	Manufacturers.find()
+
+TAPi18n.publish 'subcategories', ->
+	SubCategories.i18nFind()
